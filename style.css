@@ -9,6 +9,8 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    background-color: darkgrey;
+    gap: 12px;
     /* grid-auto-rows: minmax(100px,auto); */
 }
 
@@ -18,12 +20,12 @@ html {
 
 .enemy-field {
     grid-row: 2;
-    border-bottom: 1px solid var(--primary);
+    /* border-bottom: 1px solid var(--primary); */
 }
 
 .player-field {
     grid-row: 3;
-    border-top: 1px solid var(--primary);
+    /* border-top: 1px solid var(--primary); */
 }
 
 .player-hand {
@@ -45,6 +47,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .main-menu .menu-container {
