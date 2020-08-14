@@ -34,10 +34,44 @@ html {
 
 [class$="field"] {
     background-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
 }
+
+[class$="field"] .board,[class$="field"] .deck{
+    height: 100%;
+    width: 100%;
+    border: 2px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+[class$="field"] .board {
+    flex: 4;
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+[class$="field"] .deck {
+    flex: 1;
+    max-width: 180px;
+    box-sizing: border-box;
+}
+[class$="field"] .deck:hover {
+    cursor: pointer;
+}
+
 
 [class$="hand"] {
     background-color: var(--primary);
+}
+
+.card {
+    height: 100%;
+    max-width: 160px;
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 
 .main-menu {
