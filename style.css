@@ -38,14 +38,14 @@ html {
     flex-direction: row;
 }
 
-[class$="field"] .board,[class$="field"] .deck{
+[class$="field"] .board,
+[class$="field"] .deck {
     height: 100%;
     width: 100%;
     border: 2px solid crimson;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 [class$="field"] .board {
@@ -62,15 +62,17 @@ html {
     cursor: pointer;
 }
 
-
 [class$="hand"] {
     background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
 }
 
 .card {
     height: 100%;
-    max-width: 160px;
-    border: 1px solid blue;
+    min-width: 160px;
+    border: 2px solid blue;
     box-sizing: border-box;
 }
 
@@ -81,7 +83,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-menu .menu-container {
@@ -109,13 +111,13 @@ html {
     padding: 8px 16px;
     text-align: center;
     background-color: white;
-    box-shadow: 0px 2px 2px 0px rgba(105,105,105,1);
+    box-shadow: 0px 2px 2px 0px rgba(105, 105, 105, 1);
     transition: all 0.2s;
 }
 
 .main-menu .menu-container .menu-item:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 2px 0px rgba(105,105,105,1);
+    box-shadow: 0px 0px 2px 0px rgba(105, 105, 105, 1);
     transform: translateY(2px);
 }
 
