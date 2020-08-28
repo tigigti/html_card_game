@@ -148,13 +148,13 @@ html {
     max-width: 160px;
     background-color: white;
     border: 2px solid darkgrey;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 0 8px;
 }
 
 #card-pop-up button {
-  margin: 4px 0; 
+    margin: 4px 0;
 }
 
 body {
